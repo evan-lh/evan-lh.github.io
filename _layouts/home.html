@@ -1,0 +1,86 @@
+---
+layout: default
+---
+
+<body>
+  <div class="uk-container-expand">
+
+    <div class="uk-section-default">
+      <div class="uk-section-large uk-light uk-background-fixed uk-background-cover uk-background-center uk-blend-darken" style="background-image: url({{ "/assets/img/iceland_landscape.jpg" | relative_url }}); background-color: grey; ">
+        <div class="intro-text uk-container">
+          <h2 class="uk-heading-primary">Portfolio</h2>
+          <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
+            <div>
+              <h3 class="uk-h4">Data scientist</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Projects" class="uk-section uk-section-muted">
+      <div class="uk-container">
+        <h2 class="uh-heading-line"><span>Current projects</span></h2>
+        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+
+          <div>
+            <a class="uk-link-muted" target="_blank">
+              <div class="uk-inline uk-margin">
+                <div class="uk-text-center uk-padding-small">
+                  <h4>Work In Progress</h4>New projects coming soon.
+                </div>
+              </div>
+            </a>
+          </div>
+
+      </div>
+    </div>
+
+
+    <div id="FormerProjects" class="uk-section uk-section-muted">
+      <div class="uk-container">
+        <h2 class="uh-heading-line"><span>Current projects</span></h2>
+        <div class="uk-grid-match uk-child-width-1-2@m" uk-grid>
+
+          <div>
+            <a class="uk-link-muted" href="https://github.com/evan-lh/dash-access-manager" target="_blank">
+              <div class="uk-inline uk-margin">
+                <img class="uk-border-rounded" src="{{ "/assets/img/dam-preview.png" | relative_url }}">
+                <div class="uk-text-center uk-padding-small">
+                  <h4>Dash-Access-Manager</h4> Dash-Access-Manager provides user access management for Dash.
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div>
+            <a class="uk-link-muted" href="https://github.com/evan-lh/media-manager-intro/" target="_blank">
+              <div class="uk-inline uk-margin">
+                <img class="uk-border-rounded" src="{{ "/assets/img/media-manager-preview.png" | relative_url }}">
+                <div class="uk-text-center uk-padding-small">
+                  <h4>Media manager</h4> Open source platform to manage your media : books, movies and tv shows.
+                </div>
+              </div>
+            </a>
+          </div>
+
+      </div>
+    </div>
+
+    <div id="Contact" class="uk-section uk-section-secondary">
+      <div class="uk-container">
+        <h2 class="uk-heading-line"><span>Contact</span></h2>
+        <div class="uk-grid-match uk-child-width-1-1@m" uk-grid>
+          <div>
+            <p>
+              Here is my LinkedIn
+              <a href="https://linkedin.com/in/{{site.linkedin}}" class="uk-icon-button" uk-icon="linkedin" uk-tooltip="title: Linkedin" target="_blank"></a>
+              and my Github
+              <a href="https://github.com/{{site.github}}" class="uk-icon-button" uk-icon="github" uk-tooltip="title: GitHub" target="_blank"></a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>

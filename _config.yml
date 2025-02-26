@@ -1,0 +1,97 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+# Site configuration
+# 1. Files excluded from Jekyll builds
+# 2. Installed Gems
+# 3. Gem settings
+# 4. Jekyll settings
+# 5. Collections
+# 6. Jekyll collections settings
+# 7. Site settings
+# 8. Site navigation
+
+# 1. Files excluded from Jekyll builds
+exclude:
+- README.md
+- Gemfile
+- Gemfile.lock
+- vendor/
+
+# 2. Installed Gems
+plugins:
+  - github-pages
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap
+
+# 3. Gem settings
+paginate_path: "/blog/page:num/"
+paginate: 8
+
+
+# 4. Jekyll settings
+permalink: /blog/:year/:month/:day/:title/
+excerpt_separator: "<!--more-->"
+timezone: Europe/Paris
+
+
+# 5. Collections
+# Not using collections at this time
+# 6. Jekyll collections settings
+# Not using collections at this time
+
+# 7. Site settings
+name: Portfolio | Evan Le Hellard
+title: Portfolio | Evan Le Hellard
+author: Evan Le Hellard
+description: >- # this means to ignore newlines until "baseurl:"
+  Work in progress #WIP
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://evan-lh.github.io/" # the base hostname & protocol for your site, e.g. https://example.com
+lang: fr
+locale: fr_FR
+
+to_top: true
+
+twitter: ""
+linkedin: "evan-lh"
+github: "evan-lh"
+fb_app_id: "" # This is needed for FB Cards to work.
+
+#footer-links
+
+GitHub: "evan-lh"
+
+# 8. Site navigation
+# Not using this yet
+
+# Build settings
+
+markdown: kramdown
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true  # add comments to all blog posts
+  -
+    scope:
+      path: "" # all files
+    values:
+      layout: "page"
